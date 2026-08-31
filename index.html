@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,158 +10,64 @@
 <style>
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 50px;
-  background: #e8e8e8;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    background: #eeeeee;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    padding: 40px 0;
 }
 
-/* CAROUSEL */
-
-.carousel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
-/* EACH LINKEDIN SLIDE */
+/* CREATIVE */
 
 .slide {
-  width: 1080px;
-  height: 1080px;
-  background: #f5f5f7;
-  position: relative;
-  overflow: hidden;
-  padding: 85px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    width: 800px;
+    height: 1000px;
+    background: #f5f5f7;
+    position: relative;
+    overflow: hidden;
 }
 
-/* SMALL TOP TEXT */
+/* IMAGE */
 
-.eyebrow {
-  font-size: 18px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #86868b;
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-/* MAIN HEADLINES */
+/* SMALL PERSONAL BRAND FOOTER */
 
-h1 {
-  margin: 0;
-  font-size: 105px;
-  line-height: .98;
-  letter-spacing: -6px;
-  font-weight: 600;
-  color: #1d1d1f;
+.credit {
+    position: absolute;
+    bottom: 24px;
+    right: 30px;
+
+    font-size: 11px;
+    letter-spacing: 1.5px;
+
+    color: rgba(0,0,0,.55);
+    text-transform: uppercase;
 }
 
-h2 {
-  margin: 0;
-  font-size: 76px;
-  line-height: 1.05;
-  letter-spacing: -4px;
-  color: #1d1d1f;
-}
+/* LABEL ABOVE CREATIVE */
 
-p {
-  font-size: 30px;
-  line-height: 1.4;
-  color: #6e6e73;
-  max-width: 700px;
-}
-
-.red {
-  color: #c92032;
-}
-
-/* FAKE PRODUCT */
-
-.shoe {
-  width: 690px;
-  height: 270px;
-  background: linear-gradient(
-    135deg,
-    #ef3340,
-    #a80017
-  );
-
-  border-radius:
-    70% 30% 30% 45% /
-    55% 40% 60% 45%;
-
-  transform: rotate(-8deg);
-
-  position: absolute;
-  right: -40px;
-  bottom: 170px;
-
-  box-shadow:
-    0 45px 70px rgba(0,0,0,.18);
-}
-
-.shoe::after {
-  content: "";
-  position: absolute;
-  width: 610px;
-  height: 45px;
-  background: white;
-  bottom: -18px;
-  left: 35px;
-  border-radius: 50px;
-}
-
-/* SLIDE NUMBER */
-
-.number {
-  font-size: 17px;
-  color: #86868b;
-}
-
-/* CENTER CONTENT */
-
-.center {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* DARK SLIDE */
-
-.dark {
-  background: #000;
-}
-
-.dark h1,
-.dark h2 {
-  color: white;
-}
-
-.dark p {
-  color: #a1a1a6;
-}
-
-.dark .eyebrow,
-.dark .number {
-  color: #777;
-}
-
-/* PRODUCT NAME */
-
-.product-name {
-  font-size: 150px;
-  letter-spacing: -9px;
-  font-weight: 600;
-  margin: 0;
+.slide-label {
+    width: 800px;
+    font-size: 12px;
+    color: #777;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 </style>
@@ -168,154 +75,25 @@ p {
 
 <body>
 
-<div class="carousel">
+<div class="container">
 
+    <div class="slide-label">
+        Brand Experiment 001
+    </div>
 
-<!-- SLIDE 1 -->
+    <div class="slide">
 
-<section class="slide">
+        <img
+            src="apple1.png"
+            class="hero-image"
+            alt="What if Apple made shoes?"
+        >
 
-  <div class="eyebrow">
-    WHAT IF? — BRAND EXPERIMENT 001
-  </div>
+        <div class="credit">
+            Concept by Preeti Mishra
+        </div>
 
-  <div class="center">
-
-    <h1>
-      What if<br>
-      Apple made<br>
-      <span class="red">shoes?</span>
-    </h1>
-
-  </div>
-
-  <div class="number">
-    01 / 05
-  </div>
-
-</section>
-
-
-<!-- SLIDE 2 -->
-
-<section class="slide dark">
-
-  <div class="eyebrow">
-    THE PRODUCT
-  </div>
-
-  <div class="center">
-
-    <p>Introducing</p>
-
-    <h1 class="product-name">
-      Walk.
-    </h1>
-
-    <p>
-      Designed around the one device
-      you've always carried.
-      <br><br>
-      Yourself.
-    </p>
-
-  </div>
-
-  <div class="number">
-    02 / 05
-  </div>
-
-</section>
-
-
-<!-- SLIDE 3 -->
-
-<section class="slide">
-
-  <div class="eyebrow">
-    THE EXPERIENCE
-  </div>
-
-  <div class="center">
-
-    <h2>
-      Don't choose<br>
-      your size.
-      <br><br>
-      <span class="red">Scan it.</span>
-    </h2>
-
-    <p>
-      Your iPhone scans your feet
-      and recommends your exact fit.
-    </p>
-
-  </div>
-
-  <div class="number">
-    03 / 05
-  </div>
-
-</section>
-
-
-<!-- SLIDE 4 -->
-
-<section class="slide">
-
-  <div class="eyebrow">
-    THE ECOSYSTEM
-  </div>
-
-  <h2>
-    Your Watch knows<br>
-    how you move.
-    <br><br>
-    Your shoes could too.
-  </h2>
-
-  <div class="shoe"></div>
-
-  <div class="number">
-    04 / 05
-  </div>
-
-</section>
-
-
-<!-- SLIDE 5 -->
-
-<section class="slide dark">
-
-  <div class="eyebrow">
-    THE BRAND THOUGHT
-  </div>
-
-  <div class="center">
-
-    <h2>
-      A brand extension isn't
-      about putting your logo
-      on another product.
-    </h2>
-
-    <p>
-      It's asking:
-      <br><br>
-      <strong style="color:white;">
-        How would this product behave
-        if this brand had invented it?
-      </strong>
-    </p>
-
-  </div>
-
-  <div class="number">
-    PREETI MISHRA · BRAND EXPERIMENTS
-  </div>
-
-</section>
-
+    </div>
 
 </div>
 
