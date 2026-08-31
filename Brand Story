@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Brand Creative</title>
+
+<style>
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  background:#e9e5df;
+  font-family:Arial, sans-serif;
+  display:flex;
+  justify-content:center;
+  padding:50px;
+}
+
+/* LINKEDIN CREATIVE */
+.creative{
+  width:1080px;
+  height:1080px;
+  background:#f7f3ed;
+  position:relative;
+  overflow:hidden;
+  padding:90px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  box-shadow:0 20px 60px rgba(0,0,0,.12);
+}
+
+/* small label */
+.label{
+  font-size:20px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:#a75d3b;
+}
+
+/* main text */
+h1{
+  font-family:Georgia, serif;
+  font-size:92px;
+  line-height:1.02;
+  font-weight:400;
+  max-width:820px;
+  margin:30px 0;
+  color:#20201e;
+}
+
+.highlight{
+  color:#a75d3b;
+  font-style:italic;
+}
+
+.description{
+  font-size:30px;
+  line-height:1.5;
+  max-width:650px;
+  color:#55514c;
+}
+
+/* bottom */
+.footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  border-top:1px solid #cfc7bc;
+  padding-top:25px;
+}
+
+.name{
+  font-family:Georgia, serif;
+  font-size:27px;
+  font-style:italic;
+}
+
+.category{
+  font-size:15px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+/* decorative circle */
+.circle{
+  width:330px;
+  height:330px;
+  border-radius:50%;
+  background:#d9c4ae;
+  position:absolute;
+  right:-100px;
+  top:-100px;
+  opacity:.55;
+}
+
+.small-circle{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  border:1px solid #a75d3b;
+  position:absolute;
+  right:80px;
+  bottom:150px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="creative">
+
+  <div class="circle"></div>
+  <div class="small-circle"></div>
+
+  <div>
+
+    <div class="label">
+      Everyday Brand Observations
+    </div>
+
+    <h1>
+      It wasn't just
+      <span class="highlight">coffee.</span>
+    </h1>
+
+    <div class="description">
+      Sometimes, what we're really paying for
+      isn't the product.
+      <br><br>
+      It's how the experience makes us feel.
+    </div>
+
+  </div>
+
+  <div class="footer">
+
+    <div class="name">
+      Preeti Mishra
+    </div>
+
+    <div class="category">
+      Brand Strategy × Consumer Behaviour
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
